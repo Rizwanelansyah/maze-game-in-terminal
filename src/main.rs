@@ -43,10 +43,6 @@ fn clear_screen() {
 
 fn render_map(map: &Vec<Vec<i32>>) {
     clear_screen();
-    render_map_noclear(map);
-}
-
-fn render_map_noclear(map: &Vec<Vec<i32>>) {
     for row in map {
         let mut line = String::new();
         for code in row {
@@ -114,7 +110,6 @@ fn main() {
     draw_title("Youre the Yellow Box");
     draw_title("You must go to Blue Box");
     println!("Press Enter to continue");
-    render_map_noclear(&selected_map);
 
     let mut o = String::new();
     let _ = io::stdin().read_line(&mut o);
