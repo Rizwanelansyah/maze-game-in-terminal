@@ -1,0 +1,11 @@
+[package]
+name = "maze"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+figlet-rs = "0.1.5"
+k_board = { version = "1.2.4", features = ["lower_letter"] }
+rand = "0.8.5"
